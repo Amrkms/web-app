@@ -1,5 +1,5 @@
 #!groovy
-// Run docker build
+// Run docker build111
 properties([disableConcurrentBuilds()])
 
 pipeline {
@@ -25,7 +25,7 @@ pipeline {
         stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
-                dir ('docker/') {
+                dir ('docker') {
                 	sh 'docker build -t andrmir/private:webapp . '
                 }
             }
