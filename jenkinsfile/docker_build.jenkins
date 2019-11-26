@@ -42,16 +42,16 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('docker') {
-                	sh 'docker build -t andrmir/private:webapp . '
+                	sh """docker build -t andrmir/private:webapp . """
                 }
             }
         }
         stage("docker push") {
             steps {
                 echo " ============== start pushing image =================="
-                sh '''
+                sh """
                 docker push andrmir/private:webapp 
-                '''
+                """
             }
         }
     }
