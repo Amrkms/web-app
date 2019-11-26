@@ -16,9 +16,9 @@ pipeline {
                 echo " ============== python tests =================="
 
                dir ('') {
-                	sh """pip install -e '.[test]' --ignore-installed"""
-                        sh """coverage run -m pytest"""
-                        sh """coverage report"""
+                	sh """sudo pip install -e '.[test]' --ignore-installed"""
+                        sh """sudo coverage run -m pytest"""
+                        sh """sudo coverage report"""
                 }
             }
         }
