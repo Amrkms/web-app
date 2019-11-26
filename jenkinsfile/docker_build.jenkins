@@ -11,17 +11,17 @@ pipeline {
     }
     stages {
 
-//        stage("Start Python test")  {
-//            steps {
-//                echo " ============== python tests =================="
+        stage("Start Python test")  {
+            steps {
+                echo " ============== python tests =================="
 
-//               dir ('') {
-//                	sh """sudo pip install -e '.[test]' --ignore-installed"""
-//                        sh """sudo coverage run -m pytest"""
-//                        sh """sudo coverage report"""
-//                }
-//            }
-//        }
+               dir ('') {
+                	sh """sudo pip install -e '.[test]' --ignore-installed"""
+                        sh """sudo coverage run -m pytest"""
+                        sh """sudo coverage report"""
+                }
+            }
+        }
  
 
 
