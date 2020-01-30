@@ -1,5 +1,5 @@
 #!groovy
-// Run docker build111222223333444455555556666
+// Run docker build 30-01-2020
 properties([disableConcurrentBuilds()])
 
 pipeline {
