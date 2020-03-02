@@ -9,7 +9,7 @@ git pull https://github.com/Amrkms/web-app.git
 
 cd /opt
 mkdir appweb
-chmod 777 /opt/appweb
+chmod 664 /opt/appweb
 
 cp -r /tmp/app/* /opt/appweb/
 
