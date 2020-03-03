@@ -16,7 +16,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub_mironenko', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                     sh """uptime"""
                     sh """docker login -u $USERNAME -p $PASSWORD"""
-//                    sh """docker login -u andrmir -p Rjhktjyt2019"""
+
                     
                 }
             }
